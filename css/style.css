@@ -13,6 +13,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -49,11 +50,11 @@
 
 .header-bottom li {
     list-style: none;
-    width: 10rem;
     text-align: center;
     border: black 2px solid;
     background-color: #E28413;
     border-radius: 5px;
+    width: 19vw;
 }
 
 
@@ -61,7 +62,7 @@
     color: white;
     text-decoration: none;
     font-family:  'Arial Narrow', Arial, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .main-container {
@@ -69,29 +70,57 @@
     background-color: #252525;
 }
 
-/* Catalogo */
-
-.grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5vh 4vh 20vh 20vh 20vh;
-        grid-template-areas:
-          "catalogo catalogo catalogo"
-          "catalogo2 catalogo2 catalogo2"
-          "articulos articulos articulos"
-          "articulos articulos articulos"
-          "articulos articulos articulos";
-          width: 100%;
-          height: 100%;
-}
-  
-/* CATALOGO */
-
-.main-catalogo {
-    overflow: scroll;
+.buttom {
     background-color: #252525;
 }
 
+.main-catalogo {
+    background-color: #252525;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+    color: white;
+    display: flex;
+}
+
+.lista-articulos {
+    
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.lista-articulos .card {
+    background-image: linear-gradient(to top, #EF271B, #E28413);
+    width: 300px;
+    height: 310px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+
+/* .lista-articulos .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.lista-articulos .card img {
+    width: 300px;
+    height: 220px;
+}
+
+.lista-articulos .card h3{
+    padding: 0 1rem;
+    font-size: 10px;
+    font-weight: 300;
+}
 
 .catalogo {
     grid-area: catalogo;
@@ -104,6 +133,7 @@
 .catalogo button {
     width: 90vw;
     background-color: #E28413;
+    color: white;
 }
 
 .catalogo2 {
@@ -116,26 +146,10 @@
 .catalogo2 button {
     width: 25vw;
     background-color: #E28413;
-}
-
-h3 {
-    font-size: 80%;
     color: white;
 }
 
-.lista-articulos .articulos {
-    display: flex;
-
-}
-
-.articulos img {
-    width: 20vw;
-}
-
-.articulos {
-    padding: 4px;
-}
-     
+   
 /* CATALOGO END */
 
 
@@ -268,6 +282,46 @@ h3 {
     align-items: center
 }
 
+
+.main-contacto {
+    display: flex;
+    justify-content: center;
+    background-color: #252525;
+}
+
+.main-contacto form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(to top, #EF271B, #E28413);
+    padding: 5px;
+}
+
+.main-contacto h1 {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #EF271B, #E28413);
+    color: white;
+}
+
+.bordes {
+    padding: 4px;
+    border: #DD4B1A 2px double;
+    width: 100vw;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.enviar input {
+    width: 10rem;
+}
+
 /* MEDIA QUERYS  */
 
 /* TABLETS */
@@ -367,6 +421,82 @@ h3 {
         height: 30vh;
     }
 
+    /* CATALOGO */
+
+    .lista-articulos {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .lista-articulos .card {
+        background-image: linear-gradient(to top, #EF271B, #E28413);
+        width: 235px;
+        height: 255px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+        overflow: hidden;
+        margin: 10px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+
+    .lista-articulos .card img {
+        width: 235px;
+        height: 165px;
+    }
+
+    /* CATALOGO */
+
+    /* CONTACTO */
+
+    .main-contacto {
+        display: flex;
+        justify-content: center;
+        background-color: #252525;
+        
+    }
+    
+    .main-contacto form {
+        display: flex;
+        align-items: stretch;
+        width: 30vw;
+        margin: 0 auto;
+        color: white;
+        background-image: linear-gradient(to top, #EF271B, #E28413);
+        padding: 5px;
+    }
+    
+    .main-contacto h1 {
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, #EF271B, #E28413);
+        color: white;
+        width: 30vw;
+        margin: 0 auto;
+    }
+    
+    .bordes {
+        width: auto;
+        margin: 20px;
+    }
+    
+    .enviar {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    
+    .enviar input {
+        width: 10rem;
+    }
+
+    /* CONTACTO */
+
     .footer {
         background-image: linear-gradient(to top, #EF271B, #E28413);
     }
@@ -443,6 +573,15 @@ h3 {
     .header-bottom ul {
         width: 45rem;
     }
+
+    /* catalogo */
+
+    .lista-articulos .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* catalogo end */
 
     .nosotros {
         display: flex;
