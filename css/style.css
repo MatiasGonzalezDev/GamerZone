@@ -7,72 +7,114 @@
 #E28413
 */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
+} */
+.body {
+    
+    font-family: Georgia, Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
 }
 
+
+/* HEADER PERSONALIZADO */
+
+.logo-nav img {
+    width: 12rem;
+}
 .header {
-    background-image: linear-gradient(to top, #EF271B, #E28413);
-    display: flex;    
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4px;
+    margin: 0 auto;
+
+    background: linear-gradient(to bottom, #EF271B, #F56416) ;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
 }
 
-.header img {
-    width: 40vw;
-    padding: 15px;
-    border: 2px black solid;
-    border-radius: 30px;
-    background-color: #E28413;
-}
-
-.header input {
-    width: 95vw;
-    height: 2rem;
-    border-radius: 5px;
-    background-color: #E28413;
-}
-
-.header-bottom ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 4px;
-    background-image: linear-gradient(to bottom, #EF271B, #E28413);
-    
-}
-
-.header-bottom li {
-    list-style: none;
-    text-align: center;
-    border: black 2px solid;
-    background-color: #E28413;
-    border-radius: 5px;
-    width: 19vw;
-}
-
-
-.header-bottom a{
-    color: white;
-    text-decoration: none;
-    font-family:  'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
-}
 
 .main-container {
-    display: grid;
-    background-color: #252525;
+    padding-top: 9rem;
+    
+    max-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.buttom {
-    background-color: #252525;
+.navigation a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
 }
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    transition: all 0.4s linear;
+    padding: 0.5rem 0.2rem;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background-color: #4a4a4a;
+}
+
+/* .navBarra {
+    position: relative;
+    padding: 5px;
+
+} */
+
+.navBarra input {
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 20px;
+    width: 75vw;
+    height: 25px;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+.lupita {
+    position: absolute;
+    right: 13vw;
+    top: 80px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+
+/* HEADER PERSONALIZADO */
 
 .main-catalogo {
     background-color: #252525;
@@ -187,6 +229,8 @@
 
 .footer {
     background-image: linear-gradient(to top, #EF271B, #E28413);
+    position: absolute;
+    bottom: 0;
 }
 
 .footer h3 {
@@ -197,12 +241,6 @@
     font-size: 12px;
 }
 
-.anchoRedes{
-    width: 100vw;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-}
 
 .footer img {
     width: 5vw;
@@ -342,17 +380,7 @@
         border-radius: 30px;
         background-color: #E28413;
     }
-    
-    .header input {
-        width: 65vw;
-        height: 2rem;
-        border-radius: 5px;
-        background-color: #E28413;
-    }
-    
-    .header div {
-        padding: 5px;
-    }
+ 
     
     .header-bottom {
         background-color: #EA1744;
@@ -552,16 +580,7 @@
     }
     
     .header img {
-        width: 10rem;
-    }
-
-    .header input {
-        width: 48vw;;
-    }
-
-    .header div {
-        width: 60vw;
-        margin: 0 auto;
+        width: 15rem;
     }
 
     .header-bottom nav {
