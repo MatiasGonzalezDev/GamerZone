@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="html">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/71a8d617a2.js" crossorigin="anonymous"></script>
     <title>GAMER ZONE</title>
 </head>
+
 <body class="body">
     <!-- ENCABEZADO -->
     <header class="header">
-        <!-- LOGO -->
-        <a href="../index.html" class="sizeIndex">
-            <img src="../img/Logo gamerzone.png" alt="Logo Compra">
+        <a href="../index.html" class="logo-nav">
+            <img src="../img/Logo gamerzone.png" alt="logoInico">
         </a>
-        <div>
-            <!-- BARRA BUSCADORA -->
-            <form action="#">
-                <input type="search" placeholder="Busca tu producto" name="busqueda">
-            </form>
-        </div>
-    </header>
-    <!-- BARRA DE NAVEGACION -->
-    <div class="header-bottom">
-        <nav>
+        <form action="#" class="navBarra">
+            <input type="search" placeholder="Buscá tu producto">
+            <div class="lupita">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+        <nav class="navigation">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="../pages/tienda.html">TIENDA</a></li>
-                <li><a href="../pages/sucursal.html">SUCURSALES</a></li>
+                <li><a href="../pages/sucursal.html">SUCURSAL</a></li>
                 <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
                 <li><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     <main class="main-sucursales">
         <div>
-            <h1>SUCURSALES</h1>
+            <h4>SUCURSALES</h4>
         </div>
-        <br><br>
+        <br>
         <div class="sucursal-size">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6551639679956!2d-58.580172448925104!3d-34.6381535803546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78b4550b987%3A0xcfc9d0172fc5d511!2sAv.%20Pres.%20Per%C3%B3n%20929%2C%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659565536828!5m2!1ses!2sar"
-                style="border:0;" allowfullscreen="" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="info-direc">
@@ -70,22 +69,16 @@
     </div>
     <!-- PIE DE LA PAGINA -->
     <footer class="footer">
-        <div>
-            <h3>Seguinos en las Redes</h3>
-        </div>
-        <div class="anchoRedes">
-            <div class="order">
-                <a href=""><img src="../img/iconos redes/facebook.png" alt="redes"></a>
-                <a href=""><img src="../img/iconos redes/instagram.png" alt="redes"></a>
-                <a href=""><img src="../img/iconos redes/whatsapp.png" alt="redes"></a>
-            </div>
+        <h6>Seguinos en Nuestras Redes</h6>
+        <div class="colorFooter">
+            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
-    <div class="containerCopy">
-        <div>
-            <p>Lorem ipsum dolor sit. &copy</p>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
