@@ -1,0 +1,11 @@
+%estiloParrafo {
+    text-align: center;
+    font-size: medium;
+}
+
+@mixin fontStyle ($padding, $colorFondo) {
+    // padding: 0px 4.5px;
+    // background-color: $colorBoxtext;
+    background-color: $colorFondo;
+    padding: $padding;
+} 

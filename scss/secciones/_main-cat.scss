@@ -11,7 +11,7 @@
     padding-top: 8.6rem;
     
     &__button {
-        background: linear-gradient(to bottom, #F56416, #EF271B);
+        background: $gradientColor;
         color: white;
         display: flex;
         flex-direction: column;

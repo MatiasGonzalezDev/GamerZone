@@ -13,10 +13,9 @@
         width: 75vw;
     }
     h4 {
-        background-color: $colorBoxtext;
+        @extend %estiloParrafo;
+        @include fontStyle (0px 4.5px, $colorBoxtext);
         border-radius: 15px;
-        padding: 0px 4.5px;
-        font-size: medium;
     }
     h3 {
         font-size: larger;

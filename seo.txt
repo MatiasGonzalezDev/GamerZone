@@ -1,0 +1,18 @@
+1- Coloque etiquetas meta keywords y descripcion en todos los html
+
+En el index agregué en la descripcion "Gamer Zone se dedica a la venta de Hardware."
+y en el meta keywords "hardware, oficina, gaming, basico"
+De titulo "Bienvenidos a Gamer Zone!"
+
+En la tienda "Aqui puede realizar su compra" y de keywords "mouse, teclado, monitores, placas de video, sillas"
+De titulo "Bienvenido a la tienda!"
+
+En Sucursal "Donde nos encontramos" y de keywords "googlemaps, ubicacion"
+De titulo "Donde nos encontramos!"
+
+En Nosotros "Contamos a que nos dedicamos" y en keywords "venta, articulos"
+De titulo "Nosotros!"
+
+En Contacto "Seccion donde el usuario puede ingresar sus datos para ser contactado por nuestros representantes"
+y en keywords "contacto, datos"
+De titulo "Contacto!"

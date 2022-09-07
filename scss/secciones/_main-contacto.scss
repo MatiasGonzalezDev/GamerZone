@@ -6,15 +6,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 850px;
+    min-height: 100vh;
 
     h4 {
         font-size: large;
     }
     p {
-        font-size: medium;
-        background-color: $colorBoxtext;
-        padding: 0px 4.5px;
+        @extend %estiloParrafo;
+        @include fontStyle (0px 4.5px, $colorBoxtext);
         text-shadow: #252525 2px 1.2px;
         border-radius: 15px;
     }

@@ -19,13 +19,10 @@
         align-items: center;
 
         h5 {
-            text-align: center;
             border-radius: 15px;
-            background-color: $colorBoxtext;
-            padding: 0px 4.5px;
-            font-size: medium;
             text-shadow: #252525 2px 1.2px;
-
+            @extend %estiloParrafo;
+            @include fontStyle (0px 4.5px, $colorBoxtext);
         }
 
         h4 {

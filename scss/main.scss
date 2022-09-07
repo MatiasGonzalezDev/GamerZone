@@ -4,6 +4,7 @@
     box-sizing: border-box;
  }
 @import './variables/colores.scss';
+@import './variables/extend';
 
 
 @import './secciones/header';
@@ -15,3 +16,4 @@
 @import './secciones/footer';
 
 @import './media-querys/tablets.scss';
+@import './media-querys/escritorio';
