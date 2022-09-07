@@ -1,0 +1,17 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+@import './variables/colores.scss';
+
+
+@import './secciones/header';
+@import './secciones/main-index';
+@import './secciones/main-cat';
+@import './secciones/main-suc';
+@import './secciones/main-nosotros';
+@import './secciones/main-contacto';
+@import './secciones/footer';
+
+@import './media-querys/tablets.scss';

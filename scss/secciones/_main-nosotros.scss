@@ -1,0 +1,26 @@
+.main-nosotros {
+    padding-top: 8.6rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #252525;
+    color: $colorFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    img {
+        width: 75vw;
+    }
+    h4 {
+        background-color: $colorBoxtext;
+        border-radius: 15px;
+        padding: 0px 4.5px;
+        font-size: medium;
+    }
+    h3 {
+        font-size: larger;
+    }
+    p {
+        font-size: medium;
+    }
+}

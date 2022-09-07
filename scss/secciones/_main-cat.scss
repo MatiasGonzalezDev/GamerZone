@@ -1,0 +1,87 @@
+.main-cat {
+    background-color: #252525;
+    font-family: sans-serif;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 8.6rem;
+    
+    &__button {
+        background: linear-gradient(to bottom, #F56416, #EF271B);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4.5px;
+
+   
+        .cat {
+            margin: 0 auto;
+            button {
+                width: 19rem;
+                line-height: 1.2rem;
+                border-radius: 5px;
+            }
+        }
+        .cat2 {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            align-items: center;
+            button {
+                border-radius: 5px;
+                line-height: 1.2rem;
+                width: 5rem;
+
+            }
+        }
+    }
+    .list-catalogo {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .card {
+                background-image: linear-gradient(to top, #EF271B, #E28413);
+                width: 300px;
+                height: 310px;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin: 10px;
+                text-align: center;
+                transition: all 0.25s;
+                display: flex;
+                align-items: center;
+                    img {
+                        width: 300px;
+                        height: 220px;
+                        background: white;
+                        border-radius: 5px;
+                    }
+                    h3 {
+                        padding: 0 1rem;
+                        font-size: 12.5px;
+                        font-weight: 300;
+                        line-height: 1.3rem;
+                    }
+                    button {
+                        border-radius: 20px;
+                        width: 50%;
+                        background-color:$colorBoxtext; 
+                        color: white;
+                    
+
+                    }
+            }
+        }
+
+        
+}

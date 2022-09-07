@@ -1,0 +1,41 @@
+.main-contacto {
+    padding-top: 8.6rem;
+    width: 100%;
+    background-color: #252525;
+    color: $colorFont;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+        font-size: large;
+    }
+    p {
+        font-size: medium;
+        background-color: $colorBoxtext;
+        padding: 0px 4.5px;
+        text-shadow: #252525 2px 1.2px;
+        border-radius: 15px;
+    }
+    form {
+        background: $gradientColor;
+        padding: 5px 10px;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    .enviar {
+        display: flex;
+        justify-content: center;
+
+        // width: 100%;
+        input {
+            width: 8rem;
+            border-radius: 5px;
+        }
+    }
+}

@@ -15,16 +15,16 @@
 <body class="body">
     <!-- ENCABEZADO -->
     <header class="header">
-        <a href="../index.html" class="logo-nav">
-            <img src="../img/Logo gamerzone.png" alt="logoInico">
+        <a href="./index.html">
+            <img class="header__logo" src="../img/Logo gamerzone.png" alt="logoInico">
         </a>
-        <form action="#" class="navBarra">
-            <input type="search" placeholder="Buscá tu producto">
-            <div class="lupita">
+        <form action="#">
+            <input class="header__input" type="search" placeholder="Buscá tu producto">
+            <div class="header__lupita">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </form>
-        <nav class="navigation">
+        <nav class="header__nav">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                 <li><a href="../pages/tienda.html">TIENDA</a></li>
@@ -34,35 +34,32 @@
             </ul>
         </nav>
     </header>
-    <main class="main-sucursales">
-        <div>
-            <h4>SUCURSALES</h4>
-        </div>
-        <br>
-        <div class="sucursal-size">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6551639679956!2d-58.580172448925104!3d-34.6381535803546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78b4550b987%3A0xcfc9d0172fc5d511!2sAv.%20Pres.%20Per%C3%B3n%20929%2C%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659565536828!5m2!1ses!2sar"
-                style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="main-suc">
+        <div class="color">
+            <h4>SUCURSAL</h4>
+            <h5>Nos encontramos en Morón<br>Zona Oeste.</h5>
         </div>
 
-        <div class="info-direc">
-            <h1>Información</h1>
-            <br>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6551639679956!2d-58.580172448925104!3d-34.6381535803546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78b4550b987%3A0xcfc9d0172fc5d511!2sAv.%20Pres.%20Per%C3%B3n%20929%2C%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659565536828!5m2!1ses!2sar"
+            style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="direc">
             <strong>
-                <h3>Dirección</h3>
+                <h6>Dirección</h6>
             </strong>
             <br>
-            <p class="font-direcc">XXXXXX XXX Local XXX</p>
+            <p>XXXXXX XXX Local XXX</p>
             <br>
-            <p class="font-direcc">Ciudad Autónoma de Buenos Aires</p>
+            <p>Ciudad Autónoma de Buenos Aires</p>
             <br>
-            <p class="font-direcc">Tel: (XX XX) XXXX.XXXX</p>
+            <p>Tel: (XX XX) XXXX.XXXX</p>
             <br>
-            <p class="font-direcc">WhatsApp: (+XX XXX XXXX-XXXX)</p>
+            <p>WhatsApp: (+XX XXX XXXX-XXXX)</p>
             <br>
-            <p class="font-direcc">Por consultas acerca de tu pedido:</p>
+            <p>Por consultas acerca de tu pedido:</p>
             <br>
-            <p class="font-direcc">WhatsApp: (+XX XXX XXXX XXXX)</p>
+            <p>WhatsApp: (+XX XXX XXXX XXXX)</p>
             <br>
         </div>
     </main>
@@ -70,7 +67,7 @@
     <!-- PIE DE LA PAGINA -->
     <footer class="footer">
         <h6>Seguinos en Nuestras Redes</h6>
-        <div class="colorFooter">
+        <div class="footer__modFooter">
             <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>

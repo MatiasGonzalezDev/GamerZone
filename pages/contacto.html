@@ -15,61 +15,60 @@
 <body class="body">
     <!-- ENCABEZADO -->
     <header class="header">
-        <a href="../index.html" class="logo-nav">
-            <img src="../img/Logo gamerzone.png" alt="logoInico">
+        <a href="./index.html" >
+            <img class="header__logo" src="../img/Logo gamerzone.png" alt="logoInico">
         </a>
-        <form action="#" class="navBarra">
-            <input type="search" placeholder="Buscá tu producto">
-            <div class="lupita">
+        <form action="#">
+            <input class="header__input" type="search" placeholder="Buscá tu producto">
+            <div class="header__lupita">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </form>
-        <nav class="navigation">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/tienda.html">TIENDA</a></li>
-                <li><a href="../pages/sucursal.html">SUCURSAL</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/tienda.html">TIENDA</a></li>
+                    <li><a href="../pages/sucursal.html">SUCURSAL</a></li>
+                    <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
     </header>
     <main class="main-contacto">
-        <div class="bordes">
-            <h1>CONTACTO</h1>
+            <h4>CONTACTO</h4>
+            <p>Gamer Zone te ayuda. ¿Cuál es tu consulta?</p>
             <form action="#">
                 <label for="nombre">Nombre</label>
                 <br>
                 <input type="text" placeholder="Nombre del Cliente" name="Nombre">
-                <br><br>
+                <br>
                 <label for="email">Correo electrónico</label>
                 <br>
                 <input type="email" placeholder="Email del Cliente" name="Email">
-                <br><br>
+                <br>
                 <label for="numero">Teléfono (Opcional)</label>
                 <br>
                 <input type="number" placeholder="Numero de celular" name="Teléfono">
-                <br><br>
+                <br>
                 <label for="mensaje">Mensaje</label>
                 <br>
                 <textarea name="comentario" cols="30" rows="5"></textarea>
-                <br><br>
+                <br>
                 <div class="enviar">
                     <input type="submit" class="sizeEnviar">
                 </div>
             </form>
-        </div>
     </main>
 
     <!-- PIE DE LA PAGINA -->
     <footer class="footer">
         <h6>Seguinos en Nuestras Redes</h6>
-        <div class="colorFooter">
-            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="footer__modFooter">
+     <a href="#"><i class="fa-brands fa-facebook-messenger fa-lg"></i></a>  
+     <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+     <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
         </div>
-    </footer>
+     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>

@@ -1,0 +1,204 @@
+@media (min-width: 768px) {
+    /* HEADER PERSONALIZADO */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    
+        background: linear-gradient(to bottom, #EF271B, #F56416);
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        &__logo {
+            width: 12rem
+        }
+        &__nav {
+            list-style: none;
+            text-decoration: none;
+            display: block;
+            transition: all 0.4s linear;
+            padding: 0.5rem 0.2rem;
+            border-radius: 5px;   
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                
+                li {
+                    display: inline-block;
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: white;
+                        display: block;
+                        transition: all 0.4s linear;
+                        padding: 0.5rem 0.2rem;
+                        border-radius: 5px;
+                        
+                            &:hover {
+                                background-color: #4a4a4a;
+                            }
+                    }    
+                 
+                }
+            }
+        }
+        &__input {
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 0 20px;
+            width: 75vw;
+            height: 25px;
+            color: #000;
+            outline: none;
+            border: 1px solid silver;
+            text-align: center;       
+        }
+        &__lupita {
+            position: absolute;
+            right: 13vw;
+            top: 80px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 15%;
+        } 
+    }
+
+    // /* HEADER PERSONALIZADO */
+
+    // .main-container img {
+    //     width: 100vw;
+    // }
+
+    // .main-container div {
+    //     padding: 20px;
+    // }
+
+    // .main-container div img {
+    //     padding: 4px;
+    //     border-radius: 30px;
+    //     border: 2px #DD4B1A solid;
+    //     width: 85vw;
+    //     height: 70px;
+    // }
+
+    // .zoom-art {
+    //     transition: 0.2s;
+    // }
+
+    // .zoom-art:hover {
+    //     transform: scale(1.1);
+
+    // }
+
+    // .main-container section {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-evenly;
+    // }
+
+    // .main-container section img {
+    //     display: flex;
+    //     flex-direction: row;
+    //     width: 30vw;
+    //     height: 30vh;
+    // }
+
+    // /* CATALOGO */
+
+    // .lista-articulos {
+    //     width: 100%;
+    //     height: 100%;
+    //     justify-content: center;
+    //     margin: auto;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+
+    // .lista-articulos .card {
+    //     background-image: linear-gradient(to top, #EF271B, #E28413);
+    //     width: 235px;
+    //     height: 255px;
+    //     border-radius: 8px;
+    //     box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    //     overflow: hidden;
+    //     margin: 10px;
+    //     text-align: center;
+    //     transition: all 0.25s;
+    // }
+
+    // .lista-articulos .card img {
+    //     width: 235px;
+    //     height: 165px;
+    // }
+
+    // /* CATALOGO */
+
+    // .tiposPc {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     gap: 25px;
+    //     margin: 0 auto;
+    // }
+
+    // .tiposPc img {
+    //     width: 14rem;
+    //     margin: 0 auto;
+    // }
+
+    // /* CONTACTO */
+
+    // .main-contacto {
+    //     display: flex;
+    //     justify-content: center;
+    //     background-color: #252525;
+    //     align-items: center;
+    //     justify-content: center;
+    //     padding-top: 8.6rem;
+
+    // }
+
+    // .main-contacto form {
+    //     display: flex;
+    //     align-items: stretch;
+    //     width: 60vw;
+    //     margin: 0 auto;
+    //     color: white;
+    //     background-image: linear-gradient(to top, #EF271B, #E28413);
+    //     padding: 5px;
+    //     line-height: 0.5rem;
+    // }
+
+    // .main-contacto h1 {
+    //     display: flex;
+    //     font-size: 15px;
+    //     justify-content: center;
+    //     background-image: linear-gradient(to bottom, #EF271B, #E28413);
+    //     color: white;
+    //     width: 60vw;
+    //     margin: 0 auto;
+    // }
+
+    // .enviar {
+    //     display: flex;
+    //     justify-content: center;
+    //     margin: 5px;
+    // }
+
+    // .enviar input {
+    //     width: 10rem;
+    //     height: 20px;
+    // }
+
+    // /* CONTACTO */
+
+}

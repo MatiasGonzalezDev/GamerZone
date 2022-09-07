@@ -1,0 +1,53 @@
+.main-suc {
+    padding-top: 8.6rem;
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    iframe {
+        width: 90vw;
+        height: 70vh;
+        margin: 5px;
+    }
+
+    .color {
+        color: $colorFont;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+            text-align: center;
+            border-radius: 15px;
+            background-color: $colorBoxtext;
+            padding: 0px 4.5px;
+            font-size: medium;
+            text-shadow: #252525 2px 1.2px;
+
+        }
+
+        h4 {
+            font-size: larger;
+        }
+    }
+
+    .direc {
+        color: $colorFont;
+        text-align: center;
+        line-height: 0.6rem;
+        background-color: $colorBoxtext;
+        border-radius: 10px;
+        margin: 15px;
+
+        h6 {
+            background: linear-gradient(to bottom, #EF271B, #F56416);
+            border-radius: 10px;
+        }
+        p {
+            font-size: medium;
+            text-align: start;
+        }
+    }
+}
