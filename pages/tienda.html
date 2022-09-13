@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="./img/Logo gamerzone.png"/>
+    <link rel="icon" type="image/png" href="./img/Logo gamerzone.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="../hamburguesa.js"></script>
     <script src="https://kit.fontawesome.com/71a8d617a2.js" crossorigin="anonymous"></script>
     <meta name="description" content="Aqui puede realizar su compra">
-    <meta name="keywords"  content="mouse, teclado, monitores, placas de video, sillas">
+    <meta name="keywords" content="mouse, teclado, monitores, placas de video, sillas">
     <title>GZ | TIENDA</title>
 </head>
 
@@ -19,7 +20,7 @@
     <h1>Bievenido a la tienda!</h1>
     <!-- ENCABEZADO -->
     <header class="header">
-        <a href="./index.html">
+        <a href="../index.html">
             <img class="header__logo" src="../img/Logo gamerzone.png" alt="logoInico">
         </a>
         <form action="#">
@@ -29,17 +30,32 @@
             </div>
         </form>
         <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/tienda.html">TIENDA</a></li>
-                <li><a href="../pages/sucursal.html">SUCURSAL</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            <div class="toggle">
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h5>ENVIOS A TODO EL PAIS  <i class="fa-solid fa-truck-fast"></i></h5>
+               
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                        href="../index.html">INICIO</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                        href="../pages/tienda.html">TIENDA</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                        href="../pages/sucursal.html">SUCURSAL</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                        href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                        href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-cat">
+        <!-- Catalogo Escritorio -->
+
+
         <!-- Botones -->
         <div class="main-cat__button">
             <div class="cat">
@@ -51,7 +67,183 @@
             </div>
         </div>
         <!-- Botones END -->
+        <div class="cat-acordion">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Placa de Video
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">-Nvidia</a></li>
+                                <li><a href="#">-Radeon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Microprocesador
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a href="#">-AMD</a></li>
+                                <li><a href="#">-Intel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Monitores
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">-60hz</a></li>
+                                <li><a href="#">-120hz</a></li>
+                                <li><a href="#">-144hz</a></li>
+                                <li><a href="#">-240hz</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Mouse
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">-Logitech</a></li>
+                                <li><a href="#">-Noga</a></li>
+                                <li><a href="#">-Marvo</a></li>
+                                <li><a href="#">-Razer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Teclado
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">-Logitech</a></li>
+                                <li><a href="#">-Noga</a></li>
+                                <li><a href="#">-Marvo</a></li>
+                                <li><a href="#">-Razer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false"
+                            aria-controls="flush-collapseSix">
+                            Auriculales
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">-Logitech</a></li>
+                                <li><a href="#">-Noga</a></li>
+                                <li><a href="#">-Marvo</a></li>
+                                <li><a href="#">-Razer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            Sillas
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">-Silla de oficina</a></li>
+                                <li><a href="#">-Silla gamer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseEight">
+                            Gabinetes
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body ">
+                            <ul>
+                                <li><a href="#">ITX</a></li>
+                                <li><a href="#">M-ATX</a></li>
+                                <li><a href="#">ATX</a></li>
+                                <li><a href="#">E-ATX</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="list-catalogo">
+
             <div class="card">
                 <img src="../img/concepto-3725088.gif" alt="Articulos">
                 <h3>Placa de Video MSI GeForce RTX 3090 24GB GDDR6X GAMING X TRIO</h3>
@@ -131,9 +323,9 @@
     <footer class="footer">
         <h6>Seguinos en Nuestras Redes</h6>
         <div class="footer__modFooter">
-            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

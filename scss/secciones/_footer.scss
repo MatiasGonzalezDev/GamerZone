@@ -4,18 +4,22 @@
     align-items: center;
     background: linear-gradient(to bottom, #EF271B, #F56416);
     color: white;
+    padding-bottom: 14.3px;
 
     h6 {
         font-size: 12.5px;
+        text-shadow: 1px 0px #000;
+
     }
 
     &__modFooter {
         display: flex;
-        width: 50vw;
+        width: 70vw;
         margin: 0 auto;
         justify-content: space-evenly;
             i {
                 color: white;
+                text-shadow: #000 1.5px 1.5px;
             }
     }
 }

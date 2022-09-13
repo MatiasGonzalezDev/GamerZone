@@ -1,5 +1,5 @@
 .main-index {
-    padding-top: 8.6rem;
+    padding-top: 5.8rem;
     width: 100%;
     margin: 0 auto;
     background-color: #252525;
@@ -10,23 +10,53 @@
         align-items: center;
             img {
                 width: 90vw;
-                margin: 4px 15px;
+                height: 15vh;
+                margin: 8px 15px;
                 border-radius: 70px;
             }
     }
     &__section {
         padding: 10px;
         color: white;
-        min-height: 100vh;
             .tiposPC {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 5px;
+                gap: 15px;
                 margin: 0 auto;
-                    img {
-                        width: 18rem;
+                flex-wrap: wrap;
+                .title-description {
+                    color: $colorTitles;
+                    font-size: 1.7em;
+                    font-weight: 400;
+                    text-transform: capitalize;
+
+                    &:after {
+                        background: $colorNa;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        margin: 0.74rem 0 0;
+                        width: 2.5rem;
                     }
+                }                   
+            img {
+                width: 18.5rem;
+                border-radius: 10px;
+            }
+    }
+   
+} 
+    .banCuotas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+
+            img {
+                width: 85vw;
+                height: 4rem;
+                border-radius: 70px ;
             }
     }
 }

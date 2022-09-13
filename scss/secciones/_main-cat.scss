@@ -8,21 +8,22 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding-top: 8.6rem;
+    padding-top: 6.2rem;
     
+    .cat-acordion {
+        display: none;
+    }
     &__button {
-        background: $gradientColor;
+
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 4.5px;
 
-   
         .cat {
             margin: 0 auto;
             button {
-                width: 19rem;
+                width: 100vw;
                 line-height: 1.2rem;
                 border-radius: 5px;
             }
@@ -31,12 +32,12 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            width: 50%;
+            width: 100%;
             align-items: center;
             button {
                 border-radius: 5px;
                 line-height: 1.2rem;
-                width: 5rem;
+                width: 50vw;
 
             }
         }
