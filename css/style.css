@@ -8788,20 +8788,6 @@ textarea.form-control-lg {
     padding: 0px 4.5px;
     text-shadow: #252525 2px 1.2px;
     border-radius: 15px; }
-  .main-contacto form {
-    background: linear-gradient(to bottom, #EF271B, #F56416);
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin: 10px 0; }
-  .main-contacto input {
-    border-radius: 5px; }
-  .main-contacto .enviar {
-    display: flex;
-    justify-content: center;
-    margin: 5px auto; }
-    .main-contacto .enviar input {
-      width: 8rem;
-      border-radius: 5px; }
 
 .footer {
   display: flex;
@@ -9126,8 +9112,16 @@ textarea.form-control-lg {
         color: white; }
     .navDesktop__cart {
       grid-area: cart;
-      display: inline-block;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end; }
+      .navDesktop__cart i {
+        margin-bottom: 1.8px;
+        cursor: pointer;
+        transition: 0.3s; }
+        .navDesktop__cart i:hover {
+          transform: scale(1.1); }
     .navDesktop__navBar {
       grid-area: navBar;
       background: #ef271b;
