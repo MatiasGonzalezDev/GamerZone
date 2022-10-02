@@ -8596,7 +8596,7 @@ textarea.form-control-lg {
   width: 80%;
   margin: 0 auto;
   min-height: 100vh;
-  padding-top: 0.5rem; }
+  padding-top: 1rem; }
   .main-cat .cat-acordion {
     display: none; }
     .main-cat .cat-acordion .accordion {
@@ -8639,7 +8639,7 @@ textarea.form-control-lg {
       .main-cat__button .cat2 button {
         border-radius: 5px;
         line-height: 1.2rem;
-        width: 40vw; }
+        width: 50vw; }
   .main-cat .list-catalogo {
     width: 100%;
     height: 100%;
@@ -8702,16 +8702,37 @@ textarea.form-control-lg {
         margin: 0; }
 
 .main-suc {
-  padding-top: 0.5rem;
-  width: 100%;
+  width: 80%;
   background-color: #252525;
   display: flex;
   align-items: center;
-  flex-direction: column; }
-  .main-suc iframe {
-    width: 90vw;
-    height: 70vh;
-    margin: 5px; }
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 1rem; }
+  .main-suc .orden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    .main-suc .orden iframe {
+      width: 80vw;
+      height: 100vh;
+      margin: 5px; }
+    .main-suc .orden .direc {
+      color: white;
+      text-align: center;
+      line-height: 0.6rem;
+      background-color: #EF271B;
+      border-radius: 10px;
+      margin: 15px; }
+      .main-suc .orden .direc h6, .main-suc .orden .direc .h6 {
+        background: linear-gradient(to bottom, #EF271B, #F56416);
+        border-radius: 10px; }
+      .main-suc .orden .direc p {
+        font-size: medium;
+        text-align: start; }
   .main-suc .color {
     color: white;
     display: flex;
@@ -8724,19 +8745,6 @@ textarea.form-control-lg {
       padding: 0px 4.5px; }
     .main-suc .color h4, .main-suc .color .h4 {
       font-size: larger; }
-  .main-suc .direc {
-    color: white;
-    text-align: center;
-    line-height: 0.6rem;
-    background-color: #EF271B;
-    border-radius: 10px;
-    margin: 15px; }
-    .main-suc .direc h6, .main-suc .direc .h6 {
-      background: linear-gradient(to bottom, #EF271B, #F56416);
-      border-radius: 10px; }
-    .main-suc .direc p {
-      font-size: medium;
-      text-align: start; }
 
 .main-nosotros {
   padding-top: 0.5rem;
@@ -8747,7 +8755,9 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2rem; }
+  line-height: 2rem;
+  min-height: 100vh;
+  padding-top: 1rem; }
   .main-nosotros div {
     text-align: center; }
     .main-nosotros div img {
@@ -8763,13 +8773,14 @@ textarea.form-control-lg {
     font-size: larger; }
 
 .main-contacto {
-  padding-top: 0.5rem;
   width: 100%;
   background-color: #252525;
   color: white;
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 1rem; }
   .main-contacto h4, .main-contacto .h4 {
     font-size: large; }
   .main-contacto p {
@@ -8964,6 +8975,36 @@ textarea.form-control-lg {
       margin: 20px 0; }
       .main-index .banCuotas img {
         width: 23.5rem; }
+  .main-suc {
+    display: flex;
+    flex-direction: column; }
+    .main-suc .orden {
+      display: flex;
+      flex-direction: row; }
+      .main-suc .orden iframe {
+        width: 70vw;
+        height: 70vh;
+        margin: 20px auto; }
+      .main-suc .orden .direc {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        line-height: 0.6rem;
+        background-color: #EF271B;
+        border-radius: 10px;
+        margin: 0px 0px 0px 2rem;
+        width: 50%;
+        height: 50%; }
+  .main-nosotros {
+    display: flex;
+    flex-direction: column; }
+    .main-nosotros div {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .main-nosotros div img {
+        width: 30vw; }
   .main-cat {
     display: flex;
     flex-direction: row; }
@@ -9147,38 +9188,6 @@ textarea.form-control-lg {
         margin: auto;
         max-width: 720px;
         width: 28rem; } }
-
-.main-suc {
-  display: flex;
-  flex-direction: column; }
-  .main-suc .orden {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .main-suc .orden iframe {
-      width: 70vw;
-      height: 70vh;
-      margin: 20px auto; }
-    .main-suc .orden .direc {
-      display: flex;
-      flex-direction: column;
-      color: white;
-      text-align: center;
-      line-height: 0.6rem;
-      background-color: #EF271B;
-      border-radius: 10px;
-      margin: 20px;
-      height: 46vh; }
-
-.main-nosotros {
-  display: flex;
-  flex-direction: column; }
-  .main-nosotros div {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .main-nosotros div img {
-      width: 30vw; }
 
 .main-contacto form {
   background: linear-gradient(to bottom, #EF271B, #F56416);

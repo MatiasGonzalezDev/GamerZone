@@ -179,45 +179,6 @@
         }  
 }  
 }
-.main-suc {
-        display: flex;
-        flex-direction: column;
-        .orden {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            iframe {
-                width: 70vw;
-                height: 70vh;
-                margin: 20px auto;
-            }
-            .direc {
-                display: flex;
-                flex-direction: column;
-                color: white;
-                text-align: center;
-                line-height: 0.6rem;
-                background-color: #EF271B;
-                border-radius: 10px;
-                margin: 20px;
-                height: 46vh;
-            }
-        }
-        
-}
-
-.main-nosotros {
-        display: flex;
-        flex-direction: column;
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;        
-            img {
-                width: 30vw;
-            }
-        }
-}
 
 .main-contacto {
         

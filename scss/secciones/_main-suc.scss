@@ -1,50 +1,58 @@
 .main-suc {
-    padding-top: 0.5rem;
-    width: 100%;
+    width: 80%;
     background-color: #252525;
     display: flex;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 1rem;
 
-    iframe {
-        width: 90vw;
-        height: 70vh;
-        margin: 5px;
-    }
+    .orden {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            iframe {
+                width: 80vw;
+                height: 100vh;
+                margin: 5px;
+            }
+            .direc {
+                color: $colorFont;
+                text-align: center;
+                line-height: 0.6rem;
+                background-color: $colorBoxtext;
+                border-radius: 10px;
+                margin: 15px;
 
+                h6 {
+                    background: linear-gradient(to bottom, #EF271B, #F56416);
+                    border-radius: 10px;
+                }
+                p {
+                    font-size: medium;
+                    text-align: start;
+                }
+            }
+    }            
     .color {
-        color: $colorFont;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+                color: $colorFont;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-        h5 {
-            border-radius: 15px;
-            text-shadow: #252525 2px 1.2px;
-            @extend %estiloParrafo;
-            @include fontStyle (0px 4.5px, $colorBoxtext);
-        }
+                h5 {
+                    border-radius: 15px;
+                    text-shadow: #252525 2px 1.2px;
+                    @extend %estiloParrafo;
+                    @include fontStyle (0px 4.5px, $colorBoxtext);
+                }
 
-        h4 {
-            font-size: larger;
-        }
-    }
+                h4 {
+                    font-size: larger;
+                }
+            } 
 
-    .direc {
-        color: $colorFont;
-        text-align: center;
-        line-height: 0.6rem;
-        background-color: $colorBoxtext;
-        border-radius: 10px;
-        margin: 15px;
-
-        h6 {
-            background: linear-gradient(to bottom, #EF271B, #F56416);
-            border-radius: 10px;
-        }
-        p {
-            font-size: medium;
-            text-align: start;
-        }
-    }
 }
