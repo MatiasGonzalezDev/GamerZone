@@ -6,12 +6,41 @@
     color: white;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     min-height: 100vh;
-    padding-top: 6.2rem;
+    padding-top: 0.5rem;
     
     .cat-acordion {
         display: none;
+        
+        .accordion {
+            background-color: #E28413 !important;
+            color: white;
+            --bs-accordion-bg: none;
+            --bs-accordion-border-color: white;
+            --bs-accordion-active-color: white;
+            --bs-accordion-btn-color: white;
+            border-radius: 5px;
+                .accordion-button {
+                    background-color: $colorNa;
+                    border-radius: 5px;
+                
+                }    
+                .accordion-body {
+                    border-radius: 5px;
+                        li {
+                            a{
+                                color: white;
+                                &:hover {
+                                    color: rgba(0, 0, 255, 0.253);
+                                }
+                            }
+                        }
+                }      
+                      
+                --bs-accordion-btn-focus-box-shadow: 0 0 0 0.15rem rgba(255, 145, 20, 0.25); 
+        }
     }
     &__button {
 
@@ -51,38 +80,74 @@
             flex-wrap: wrap;
             .card {
                 background-image: linear-gradient(to top, #EF271B, #E28413);
-                width: 300px;
-                height: 310px;
-                border-radius: 8px;
-                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                max-width: 270px;
+                border-radius: 6px;
+                box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.2);
+                background-color: rgb(239, 39, 27);
                 overflow: hidden;
                 margin: 10px;
                 text-align: center;
-                transition: all 0.25s;
                 display: flex;
                 align-items: center;
-                    img {
-                        width: 300px;
-                        height: 220px;
-                        background: white;
-                        border-radius: 5px;
-                    }
-                    h3 {
-                        padding: 0 1rem;
-                        font-size: 12.5px;
-                        font-weight: 300;
-                        line-height: 1.3rem;
-                    }
-                    button {
-                        border-radius: 20px;
-                        width: 50%;
-                        background-color:$colorBoxtext; 
-                        color: white;
-                    
+                justify-content: space-between;
+                transition-property: box-shadow;
+                transition: 0.4s;
+                cursor: pointer;
+                    &:hover {
+                        box-shadow: 0 0 0 0.2em rgba(255, 50, 65, 0.7) ;
+                        
+                        transform: scale(1.1);
 
                     }
+                    button {
+                        border-radius: 6px;
+                        width: 80%;
+                        background-color: #E28413 ; 
+                        color: white;
+                        border: none;
+                        display: block;
+                        margin: 5px 0;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                            &:active {    
+                                color: rgba(0, 0, 255, 0.253);
+                            }
+                    }
+                    
+                
+                    img {
+                        width: 100%;
+                        height: 170px;
+                        background: white;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        object-fit: contain;
+                        
+                    }
+                    h3 {
+                        border-top: 1px solid rgb(230, 230, 230);
+                        padding-top: 1em;
+                        margin: 10px 8px 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.2rem;
+                        text-align: left;
+                        width: 95%;
+
+                    }
+
+                    h6 {
+                        
+                        width: 95%;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 28px;
+                        padding: 10px 0;
+                        margin: 0;
+                        
+                    }
             }
-        }
+    }
 
         
 }
