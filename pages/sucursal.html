@@ -20,37 +20,44 @@
     <h1>Donde nos encontramos!</h1>
     <!-- ENCABEZADO -->
     <header class="header">
-        <a href="../index.html">
+        <a href="./index.html">
             <img class="header__logo" src="../img/Logo gamerzone.png" alt="logoInico">
         </a>
-        <form action="#">
-            <input class="header__input" type="search" placeholder="Buscá tu producto">
-            <div class="header__lupita">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </form>
-        <nav class="header__nav">
-            <div class="toggle">
-                <button class="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <h5>ENVIOS A TODO EL PAIS <i class="fa-solid fa-truck-fast"></i></h5>
-
-            </div>
-
-            <ul class="nav-menu">
-                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
-                        href="../index.html">INICIO</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
-                        href="../pages/tienda.html">TIENDA</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
-                        href="../pages/sucursal.html">SUCURSAL</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
-                        href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
-                        href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <div class="header__form">
+            <form action="#">
+                <input class="header__input" type="search" placeholder="Buscá tu producto">
+                <div class="header__lupita">
+                    <button type="button" aria-label="Buscá tu producto" role="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="header__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="burguer_active">
+            <nav class="header__nav">
+                <div class="toggle">
+                    <button class="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h5>ENVIOS A TODO EL PAIS <i class="fa-solid fa-truck-fast"></i></h5>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                            href="./index.html">INICIO</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                            href="./pages/tienda.html">TIENDA</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                            href="./pages/sucursal.html">SUCURSAL</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                            href="./pages/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link nav-menu-link_active"
+                            href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Header Desktop -->
     <div class="navDesktop">

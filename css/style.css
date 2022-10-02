@@ -8623,9 +8623,11 @@ textarea.form-control-lg {
     flex-direction: column;
     align-items: center; }
     .main-cat__button .cat {
-      margin: 0 auto; }
+      width: 100%;
+      display: flex;
+      align-items: center; }
       .main-cat__button .cat button {
-        width: 100vw;
+        width: 80vw;
         line-height: 1.2rem;
         border-radius: 5px; }
     .main-cat__button .cat2 {
@@ -8637,7 +8639,7 @@ textarea.form-control-lg {
       .main-cat__button .cat2 button {
         border-radius: 5px;
         line-height: 1.2rem;
-        width: 50vw; }
+        width: 40vw; }
   .main-cat .list-catalogo {
     width: 100%;
     height: 100%;
