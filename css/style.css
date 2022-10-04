@@ -8781,6 +8781,26 @@ textarea.form-control-lg {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 1rem; }
+  .main-contacto form {
+    background-color: #F56416;
+    padding: 2px 2px;
+    border-radius: 8px;
+    margin: 10px 0; }
+    .main-contacto form .bgForm {
+      background-color: white;
+      padding: 15px 10px 2px;
+      border-radius: 5px; }
+      .main-contacto form .bgForm .button {
+        text-align: center; }
+        .main-contacto form .bgForm .button .btn {
+          width: 50%;
+          background: #F56416;
+          text-transform: uppercase;
+          font-family: 400; }
+      .main-contacto form .bgForm .datosCont {
+        padding: 0; }
+      .main-contacto form .bgForm .inputDatos {
+        margin: 10px 0; }
   .main-contacto h4, .main-contacto .h4 {
     font-size: large; }
   .main-contacto p {
@@ -9182,14 +9202,6 @@ textarea.form-control-lg {
         margin: auto;
         max-width: 720px;
         width: 28rem; } }
-
-.main-contacto form {
-  background: linear-gradient(to bottom, #EF271B, #F56416);
-  padding: 5px 10px;
-  border-radius: 8px;
-  margin: 10px 0;
-  width: 50%;
-  text-align: center; }
 
 .footer__apart h6, .footer__apart .h6 {
   font-size: 100%;
