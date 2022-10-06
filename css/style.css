@@ -8790,6 +8790,12 @@ textarea.form-control-lg {
       background-color: white;
       padding: 15px 10px 2px;
       border-radius: 5px; }
+      .main-contacto form .bgForm .form-check-input:valid:checked {
+        background-color: #F56416 !important; }
+      .main-contacto form .bgForm .form-check-input:valid ~ .form-check-label {
+        color: #000; }
+      .main-contacto form .bgForm .form-check-input:valid {
+        border-color: #F56416; }
       .main-contacto form .bgForm .button {
         text-align: center; }
         .main-contacto form .bgForm .button .btn {

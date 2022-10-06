@@ -17,6 +17,16 @@
             background-color: white;
             padding: 15px 10px 2px;
             border-radius: 5px;
+            .form-check-input:valid:checked {
+                background-color: $colorNa !important;
+            }
+            .form-check-input:valid~.form-check-label {
+                color: #000;
+            }
+            .form-check-input:valid {
+                border-color: $colorNa;
+            }
+            
             .button {
                 text-align: center;
                 .btn {
